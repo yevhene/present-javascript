@@ -1,4 +1,4 @@
 module.exports = {
-  title: 'React Hooks',
+  title: 'Why JavaScript?',
   port: process.env.PORT || 3000
 };
