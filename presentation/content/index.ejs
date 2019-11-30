@@ -112,12 +112,22 @@
     <h3>IEEE 754</h3>
 
     <pre><code class="javascript hljs" data-trim contenteditable>
-0.1 + 0.2 → 0.30000000000000004
 0.1 + 0.2 === 0.3 → false // ???
     </code></pre>
 
     <pre class="fragment"><code class="javascript hljs" data-trim contenteditable>
+0.1 + 0.2 → 0.30000000000000004
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>IEEE 754 (cont.)</h3>
+
+    <pre><code class="javascript hljs" data-trim contenteditable>
 x = 1.0000000000000001
+    </code></pre>
+
+    <pre class="fragment"><code class="javascript hljs" data-trim contenteditable>
 x === 1 → true // ???
     </code></pre>
   </section>
@@ -127,9 +137,8 @@ x === 1 → true // ???
 
     <pre><code class="javascript hljs" data-trim contenteditable>
 [] + [] → "" // Empty string? These are arrays!
-[] + {} → [object object]
+[] + {} → "[object object]"
 {} + [] → 0 // Why isn't the operation commutative???
-{} + {} → NaN // ???
     </code></pre>
   </section>
 
@@ -147,7 +156,7 @@ x === 1 → true // ???
     <ul>
       <li>JavaScript розроблявся, як мова для "непрограмістів", яку легко було б вивчати і користуватись;</li>
       <li>JavaScript - це стандарт, який реалізують багато різних конкуруючих компаній;</li>
-      <li>Помилки в стандарті майже неможливо виправити;</li>
+      <li>Помилки в стандарті майже неможливо виправити, тому що є вже написаний код, що враховує існуючі помилки;</li>
       <li>Довгий час стандарт встановлював "де факто" <i>Internet Explorer</i> від <i>Microsoft</i>.</li>
     </ul>
   </section>
